@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 17px;
+            display: inline;
+            padding: 5px;
+        }
+
+        h2 {
+            /* padding: 0;
+            margin: 0; */
+            margin-left: 30px;
+            color: red;
+        }
+        header{
+            width: 80%;
+        }
+        nav {
+            float: right;
+        }
+        footer{
+            width: 80%;
+            font-style: italic;            
+        }
+        footer a{
+            text-decoration:none;
+            color: gray;
+        }
+        aside{
+            float: right;
+            /* border: 1px solid green; */
+            background: green;
+            width: 150px;
+            height: 500px;
+        }
+        section {
+            border: 1px solid gainsboro;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 80%;
+        }
+
+        span {
+            box-sizing: content-box;
+            width: 200px;
+            height: 250px;
+            padding: 3px;
+            margin: 10px;
+            border: 2px solid blue;
+        }
+
+        #sec-hr {
+            border: 2px dotted red;
+            width: 90%;
+            margin-left: 30px;
+        }
+
+        #sp {
+            display: flex;
+            margin-left: 2.5%;
+        }
+        #line-hr{
+            width: 80%;
+            text-align: left;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>로고</h1>
+        <nav>
+            <a href="#">메뉴1</a>
+            <a href="#">메뉴2</a>
+            <a href="#">메뉴3</a>
+        </nav>
+    </header>
+    <hr id="line-hr">
+    <aside>Side Banner</aside>
+    <section>
+        <h2>Section</h2>
+        <hr id="sec-hr">
+        <div id="sp">
+            <span>Article 1 내용 블라 블라~~~</span>
+            <span>Article 2 내용 블라 블라~~~</span>
+            <span>Article 3 내용 블라 블라~~~</span>
+        </div>
+    </section>
+
+    
+    <hr id="line-hr">
+    <footer>
+        <a href="#">이메일 전송</a>
+        <a href="#">전화걸기</a>
+    </footer>
+
+</body>
+
+</html>
