@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 후손 선택자 - 후손을 선택함 //띄어쓰기 중요!!! */
+        /* 맨 뒤가 타겟, 앞에는 조건 */
+
+        /* 후손 선택자를 나열하는 이유는 스타일 적용에 우선순위가 높아지기 때문이기도 함 */
+
+        div > .orange {
+            /* 자식 선택자 */
+            background: orange;
+        }
+       
+        div .orange {
+            /* 후손 선택자 */
+            background: orange;
+        }
+
+        body > #tomato {
+            /* 적용 안됨 #tomato의 부모는 div */
+            background: tomato;
+        }
+
+        body #tomato {
+            background: tomato;
+        }
+
+        .wrap > div {
+            /* 중간에 단계가 추가 될 경우도 있어 실무적인 측면에서 비효율적임 */
+            font-size: 1.5em;
+            color: orangered;
+        }
+        
+        .wrap div {
+            /* 후손 선택자라면 중간에 추가 되어도 스타일이 적용됨 */
+            /* 일반적으로 자식선택자보다 후손선택자를 사용하는게 맞음 */
+            font-size: 1.5em;
+            color: orangered;
+        }
+        
+    </style>
+</head>
+<body>  
+    
+    <h1 id="change" class="low primary yellow center">안녕하세요</h1>
+
+    <!-- div>ul>li*3 -->
+    <div class="wrap">
+        <ul>
+            <li id="apple" class="reverse center">사과</li>
+            <li>포도</li>
+            <!-- 클래스 여러개 지정 -->
+            <li class="orange reverse">오렌지</li>
+        </ul>
+    
+
+        <!-- div+p+span -->
+        <section>
+            <div>당근</div>
+        </section>
+        <p id="tomato">토마토</p>
+        <span class="orange">오렌지</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 일치 선택자 - 동시에 여러 조건을 만족하는 경우 */
+        li.orange {
+            background: orange;
+        }
+
+        #apple.reverse{
+            color: red;
+        }
+        h1.yellow.low.primary#change{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>  
+    
+    <h1 id="change" class="low primary yellow center">안녕하세요</h1>
+
+    <!-- div>ul>li*3 -->
+    <div>
+        <ul>
+            <li id="apple" class="reverse center">사과</li>
+            <li>포도</li>
+            <!-- 클래스 여러개 지정 -->
+            <li class="orange reverse">오렌지</li>
+        </ul>
+    </div>
+
+    <!-- div+p+span -->
+    <div>당근</div>
+    <p id="tomato">토마토</p>
+    <span class="orange">오렌지</span>
+</body>
+</html>
