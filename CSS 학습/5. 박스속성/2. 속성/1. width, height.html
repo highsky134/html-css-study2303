@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: gray;
+        }
+        .box {
+            background: orange;
+            height: auto;
+            /* 실무적인 측면에서 height는 안써버림(auto) 
+                부모는 안쓰는게(auto) 나음 = 자식에 컨텐츠가 들어있다면 그걸 사용하기때문
+            */
+            padding: 50px;
+        }
+        .box2 {
+            background: greenyellow;
+            height: 300px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

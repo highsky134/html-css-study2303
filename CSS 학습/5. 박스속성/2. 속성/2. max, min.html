@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* min - 내용이 없더라도 최소한의 크기를 정하고 싶을때 */
+        /* max - 내용이 많아도 최대 크기를 정하고 싶을때(스크롤 처리) */
+        .parent { 
+            width: 700px;
+            height: 300px;
+            background: skyblue;
+        }
+        .child {
+            height: 200px;
+            background: orange;
+            max-width: 500px;
+            min-width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
