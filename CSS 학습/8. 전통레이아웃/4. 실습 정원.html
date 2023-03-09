@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- common css -->
+    <link rel="stylesheet" href="../../common.css">
+    
+    <!-- custom css -->
+    <style>
+        .container {
+            width: 70%;
+            margin: 50px auto 0;
+            border: 3px double dodgerblue;
+        }
+        .container h1 {
+            background: lightgray;
+            font-weight: 700;
+            font-size: 2em;
+            font-family: '궁서체','Courier New', Courier, monospace;
+            text-align: center;
+            padding: 15px;
+        }
+        .container h2 {
+            background: #2b2828d5;
+            color: #fff;
+            padding: 10px;
+            font-size: 0.9em;
+            text-align: center;            
+        }
+        .container h2 strong {
+            color: rgba(255, 255, 0, 0.767);
+            font-size: 1.1em;
+        }
+        
+        .container .contents {
+            background: gray;
+        }
+        .container .contents .f {
+            width: 23%;
+            height: 250px;
+            float: left;   
+            padding: 5px;
+            margin: 10px 1.6% 10px 0;
+            border: 1px solid #ffffff8c;
+        }
+
+        .container .contents .f .fs{
+            height: 45%;
+            margin-bottom: 20px;            
+        }
+
+        .container .contents .flowers1 {
+            background: red;
+        }
+        .container .contents .flowers1 .f1 {
+            background: url('../../img/tulip.jpg') no-repeat center / cover;
+        }
+        .container .contents .flowers1:first-child {
+            margin-left: 1.6%;
+        }
+
+        .container .contents .flowers2 {
+            background: plum;
+        }
+        .container .contents .flowers2 .f2 {
+            background: url('../../img/jebi.jpg') no-repeat center / cover;
+        }
+        .container .contents .flowers3 {
+            background: orange;
+        }
+        .container .contents .flowers3 .f3 {
+            background: url('../../img/hobak.jpg') no-repeat center / cover;
+        }
+        .container .contents .flowers4 {
+            background: yellow;
+        }
+        .container .contents .flowers4 .f4 {            
+            background: url('../../img/sunflower.jpg') no-repeat center / cover;
+        }
+        .container .contents p {
+            font-size: 0.8em;
+            font-family: consolas serif;
+            line-height: 1.1;
+            font-weight: 700;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>나의 아름다운 정원</h1>
+        <h2> 사람들은 아마 자신에게 <strong>자신감을 북돋워 주는</strong> 표정있는 꽃들을 선호할 것이다.</h2>
+        <div class="contents clearfix">
+            <div class="f flowers1">
+                <div class="fs f1"></div>
+                <p>너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+                    붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다</p>
+            </div>
+            <div class="f flowers2">
+                <div class="fs f2"></div>
+                <p>드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+                    어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.
+                    </p>
+            </div>
+            <div class="f flowers3">
+                <div class="fs f3"></div>
+                <p>색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+                    매우 완숙한 이미지를 풍기는 꽃이다.
+                    </p>
+            </div>
+            <div class="f flowers4">
+                <div class="fs f4"></div>
+                <p>태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+                    속하며 송이가 적어야 제격이다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
