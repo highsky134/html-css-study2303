@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 550px;
+            height: 350px;
+            border: 4px dashed gray;
+            margin: 50px auto 0;
+            
+
+            /* 배경 속성 */
+            background-color: orange;
+            /* background-image: img와 다르게 자동으로 overflow:hidden; 처리를 해줌 */
+            background-image: url('../../img/sky.jpg');
+
+            /*              width  height  가로만 주면 세로는 비율로 */
+            background-size: 520px   250px;
+            background-repeat: no-repeat;
+
+            /*  사진위치 조절      x축     y축   =  px단위, left top 등, 0% 50% */
+            background-position: center  center;
+            /* background-position: 30px  100px; */
+
+            background: url('../../img/sky.jpg') skyblue no-repeat
+                        50% 50% / 200px 100px;
+               /* 위치(position)/ 사이즈(size)    */
+               /*  center / cover 를 제일 많이 사용함 */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
