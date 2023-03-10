@@ -22,3 +22,5 @@
 6. beautify : 코드 들여쓰기, 내어쓰기 줄맞춤
  - 설정법 : 파일 -> 기본설정 -> 바로가기 키
  - Hooky 검색 후 Beautify file 단축키 : Ctrl + Alt + L 지정
+
+7.
