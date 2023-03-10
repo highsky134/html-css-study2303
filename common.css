@@ -20,4 +20,12 @@ a {
     display: block;
     clear: both;
 }
+
+.center {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* 이 위로 기본적으로 세팅하면서 만들자! */

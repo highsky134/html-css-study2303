@@ -1,0 +1,78 @@
+@import url('../../common.css');
+
+/* base style */
+body{
+    background: #666;
+    font-size: 14px;
+    font-family: '굴림',Gulim,serif;
+    color: #333;    
+}
+#wrapper {
+    width: 60%;
+    margin: 0 auto;
+    /* background: orange; */
+}
+/* //end base */
+
+
+/* ---------begin header style----------- */
+header {
+    background: #123456;
+    padding: 10px;
+    color: #fff;
+}
+header h1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #cc0;
+    text-align: center;
+    font-family: '휴먼모음T', cursive;
+}
+header h1 strong {
+    font-size: 3em;
+    color: #fff;    
+}
+header h1 span {
+    font-size: 1.5em;
+}
+header h1 em {
+    font-size: 2em;
+    color: #ccc;
+}
+/* //end header style */
+
+/* begin container style */
+.container {
+    background: #ccc;
+}
+.container .menu {    
+    /* background: aqua; */
+    float: left;
+    width: 20%;
+    padding: 20px;
+}
+.container .menu li{
+    margin-bottom: 8px;
+text-decoration: underline;
+}
+.container .menu li a:hover{
+    color: #662;
+    border-bottom: 1px dashed #662;
+}
+.container .content {
+    background: #fff;
+    float: right;
+    width: 80%;
+}
+.container .content h2 {
+    background: #800;
+    color: #ee0;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 15px 20px;
+    font-family: '궁서', cursive, serif;
+}
+.container .content p {
+    padding: 15px;
+    text-align: justify;
+}
