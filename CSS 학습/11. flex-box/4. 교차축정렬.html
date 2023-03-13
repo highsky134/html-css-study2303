@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 4px solid #000;
+            height: 400px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            /* 교차 축 정렬 */
+            /* align-content: center; */ /* 여러줄이어도 집단행동 */
+            
+            align-items: center; /* 줄별로 개별적으로 처리함 */
+        }
+        .item {
+            width: 150px;
+            height: 100px;
+            border: 4px solid red;
+            border-radius: 10px;
+            font-size: 40px;
+
+            /* 텍스트 중앙정렬 df, jcc, aic */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+</body>
+</html>
